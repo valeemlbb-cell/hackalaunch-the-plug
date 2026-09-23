@@ -1,0 +1,48 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  pytest:
+    name: pytest (${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12", "3.13"]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      # Plugboard's runtime is the standard library; only the test tools are needed.
+      # `solders` (optional, for devnet anchoring) is deliberately left out so the suite
+      # also proves the "runs with nothing installed" claim.
+      - name: Install test dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install "pytest>=8.0" "pytest-cov>=5.0"
+
+      - name: Run the suite with coverage
+        run: python -m pytest tests -q --cov=plugboard --cov-report=term-missing
+
+      # The claim in the README is 86% line coverage; fail the build if it slips.
+      - name: Enforce the coverage floor
+        run: python -m pytest tests -q --cov=plugboard --cov-fail-under=80
+
+      - name: No secrets tracked in the repo
+        run: |
+          if git ls-files | grep -Ei '\.env$|contacts\.local|keypair|secret'; then
+            echo "tracked file looks sensitive"; exit 1
+          fi
+          echo "clean"

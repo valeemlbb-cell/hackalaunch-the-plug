@@ -1,0 +1,13 @@
+# Only needed to REBUILD the demo video with `python demo/make_demo.py`.
+# Plugboard itself needs none of this - see requirements.txt.
+
+pillow>=10.0          # frame rendering (text, layout, the terminal frames)
+playwright>=1.40      # headless Chromium screenshots of the real dashboard
+matplotlib>=3.8       # bundled DejaVu fonts used by the frame renderer
+
+# Not installable with pip - install separately and put it on PATH:
+#   ffmpeg            https://ffmpeg.org/download.html  (muxing, concat, scaling)
+# After pip install, fetch the browser once:
+#   playwright install chromium
+# The narration uses the offline Windows System.Speech engine (PowerShell), so the
+# video build as written is Windows-only; everything else in this repo is not.

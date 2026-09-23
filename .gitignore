@@ -5,7 +5,12 @@ data/contacts.local.json
 *.eml
 demo_build/
 
-# demo.mp4 IS committed (3 MB, built by demo/make_demo.py from a real run)
+# demo_small.mp4 (720p, 2.4 MB) IS committed. demo.mp4 (1080p) is NOT - it goes on a
+# GitHub release instead, so the tree does not carry two near-identical videos. RUN.md 3.
+demo.mp4
+
+# internal pre-submission review notes - not part of the submission
+REVIEW_*.md
 
 __pycache__/
 *.py[cod]

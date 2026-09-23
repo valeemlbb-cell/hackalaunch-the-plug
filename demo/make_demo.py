@@ -1,4 +1,9 @@
-"""Build demo.mp4 from a real run of Plugboard. Nothing in the video is mocked.
+"""Build demo.mp4 from a real run of Plugboard.
+
+The video is RENDERED, not screen-captured: every line of terminal text in it is the
+actual stdout of a real CLI run driven here by subprocess, the dashboard shots are real
+screenshots of the real server, and the voice-over is synthesized. No number, ranking or
+refusal in the video was written by hand.
 
 What this script does, in order:
 

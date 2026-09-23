@@ -18,13 +18,21 @@ run the commands below, and the whole loop works.
 
 ## Demo
 
-**[demo.mp4](demo.mp4)** - 2 minutes 19 seconds, 1080p, in this repository.
+**[demo_small.mp4](demo_small.mp4)** - 2 minutes 19 seconds, 720p, 2.4 MB, in this
+repository. The 1080p master is attached to the [latest
+release](https://github.com/valeemlbb-cell/hackalaunch-the-plug/releases) rather than
+committed, so the repo does not carry two near-identical binaries.
 Hosted copy: `<link added at submission time>`
 
-Nothing in it is mocked. `demo/make_demo.py` wipes a workspace, drives the real CLI with
-subprocess, captures the actual stdout, screenshots the real dashboard with headless
-Chromium, narrates with the offline Windows voice, and assembles the result with ffmpeg.
-Rebuild it yourself with `python demo/make_demo.py`.
+**What the video is, exactly.** It is not a screen recording of somebody using the app. It
+is *rendered* by `demo/make_demo.py` from real output: the script wipes a workspace, drives
+the real CLI with `subprocess`, and types the **actual stdout** of those runs onto frames;
+the dashboard shots are **real screenshots** of the real server taken with headless
+Chromium; the voice-over is **synthesized** with the offline Windows speech engine. No
+number, no ranking and no refusal in the video was written by hand - but the terminal you
+see is a rendering of a real run, not a capture of one. Rebuild it yourself and compare:
+`python demo/make_demo.py` (see [requirements-demo.txt](requirements-demo.txt); needs
+`ffmpeg` on PATH).
 
 ---
 
@@ -33,7 +41,7 @@ Rebuild it yourself with `python demo/make_demo.py`.
 Requires Python 3.11+. Nothing else.
 
 ```bash
-git clone <this repo> && cd the-plug
+git clone https://github.com/valeemlbb-cell/hackalaunch-the-plug.git && cd hackalaunch-the-plug
 python -m pytest tests -q                     # 129 tests, ~86% coverage
 
 python -m plugboard brief data/briefs/sample_brief.txt --id kilat
@@ -225,16 +233,26 @@ the fee or add a deliverable and `verify` says the terms changed.
 **Devnet only.** `SOLANA_CLUSTER=mainnet-beta` is refused at startup and re-checked before a
 transaction is built. Nothing here moves value.
 
-**Honest status:** the transaction builds, signs and is accepted for simulation by
-`api.devnet.solana.com`; it was not confirmed on chain from the build machine because the
-public devnet faucet returned HTTP 429 to every airdrop request, leaving the fee payer at
-0 SOL. Fund a devnet key and it completes:
+**Honest status - read this before judging the Solana part.** There is **no confirmed
+devnet transaction to link yet.** The transaction builds, signs, and is accepted for
+simulation by `api.devnet.solana.com`, but it has never been confirmed on chain from the
+build machine: every airdrop request to the public devnet *and* testnet faucets was answered
+with a rate-limit error, so the fee payer sits at 0 SOL. We would rather say that than link
+a transaction we did not land.
+
+Anything with a funded devnet key can finish it in two minutes, and the explorer URL it
+prints belongs in this paragraph:
 
 ```bash
-solana-keygen new -o devnet.json
-solana airdrop 1 -k devnet.json --url devnet
+solana-keygen new -o devnet.json --no-bip39-passphrase
+solana airdrop 1 -k devnet.json --url devnet      # or any devnet faucet
 SOLANA_KEYPAIR_PATH=devnet.json python -m plugboard receipt anchor --deal deal-kilat-c014
 ```
+
+`receipts.py` is the least-covered module in the suite (41%) for the same reason: the parts
+that need a live RPC are the parts we could not exercise. Everything up to the signature -
+canonical terms, hashing, memo construction, mainnet refusal, `verify` - is covered and
+tested offline.
 
 Without a funded key, `anchor` reports `not anchored: <reason>` and still stores the hash -
 the hash is the product, the chain is a witness.
@@ -293,7 +311,10 @@ docs/
 **The creator index is anonymised.** `data/creators.seed.json` holds 24 records derived from
 real scouting work with every identifier removed: no names, no handles, no URLs, no
 addresses. `display_label` is a description, not an identity. A test fails the build if an
-`@` appears in the file. Contact details live in `data/contacts.local.json`, gitignored and
+`@` appears in the file. One consequence to expect before you click: the `source_url` on
+every evidence item is a `local://scout/<date>/<id>` reference into private scouting notes,
+not a public link, because publishing the link would re-identify the creator the
+anonymisation just removed. Contact details live in `data/contacts.local.json`, gitignored and
 absent from this repo; `catalog.resolve_contact()` is the only bridge, and it is called only
 when constructing a sender for an already-approved draft. Details:
 **[docs/DATA_SOURCES.md](docs/DATA_SOURCES.md)**.

@@ -3,8 +3,10 @@
 **Project name:** Plugboard
 **Hackathon:** The Plug (https://hackalaunch.com/h/the-plug)
 **Team:** Warung Ops - Henggar (X [@issue0x](https://x.com/issue0x), Telegram @sambobolo)
-**Repo URL:** `<REPO URL>` *(fill after `gh repo create` - see [RUN.md](RUN.md))*
-**Demo video:** `<VIDEO URL>` *(fill after upload - `demo.mp4`, 1080p, 2:19)*
+**Repo URL:** https://github.com/valeemlbb-cell/hackalaunch-the-plug
+**Demo video:** `<VIDEO URL>` - **the one remaining human step.** Upload `demo.mp4` (1080p,
+2:19) to YouTube unlisted / Loom / Vimeo / X as the rules require, then replace this token
+here, in the paste block below, and in the README's "Hosted copy" line. See [RUN.md](RUN.md) §3.
 **Payout address (Solana):** `7W31iaCmjerN1jkpEnmZevn74SZxv83yEQvLsnc4PS7Q`
 **Licence:** MIT
 
@@ -20,7 +22,8 @@ one character after approval - whether by a bug or by a prompt injection hidden 
 creator's reply - kills the send. Matching is deterministic and explains itself: seven
 weighted dimensions summing to 1.0, six hard filters that exclude rather than downrank, and
 a sentence of reasoning a founder can argue with on every line. Deal terms can optionally be
-anchored as a hash in an SPL Memo on Solana devnet. Everything else follows from those two
+anchored as a hash in an SPL Memo on Solana devnet (built and signed; not yet confirmed on
+chain - the README says why, in the open). Everything else follows from those two
 choices - no "approve all" button, no field for typing a performance number, no handles or
 addresses in the repo.
 
@@ -94,9 +97,17 @@ Agreed terms are hashed and can be anchored as an SPL Memo on **devnet**: a hash
 the parties, not the fee. `plugboard verify` detects changed terms. Mainnet is **refused at
 startup**. Optional; the rest of the product runs without it. README §"Deal receipts".
 
+**Stated plainly: there is no confirmed devnet transaction to link.** The transaction
+builds, signs and simulates against `api.devnet.solana.com`, but the public devnet *and*
+testnet faucets rate-limited every airdrop from the build machine, so the fee payer never
+had the lamports to land it. The README carries the same admission and the three commands
+that finish it from a funded key. Judge this section on the code, not on a link.
+
 ### 7. Hackathon rules compliance
-Public repo with full history; MIT licence; demo under 3 minutes (2:19, 1080p, real screen
-capture of real runs with English voice-over); **no private keys, seed phrases or API keys**
+Public repo with full history; MIT licence; demo under 3 minutes (2:19) - **rendered** by
+`demo/make_demo.py` from the real CLI's actual stdout and real screenshots of the real
+dashboard, with synthesized narration, rather than a screen capture of a person using the
+app; **no private keys, seed phrases or API keys**
 anywhere - `.env.example` only; devnet only; no admin backdoors; no unsolicited bulk
 outreach (the approval gate makes it structurally impossible); pre-hackathon work marked in
 the README; 129 tests at 86% line coverage, including body tampering, subject tampering,
@@ -106,13 +117,14 @@ forged tokens, opt-out-after-approval and CSRF.
 
 ## Paste block for the HackaLaunch description field
 
-Fill the two placeholders first, then paste everything between the rules.
+Fill `<VIDEO URL>` first (the repo URL is already filled), then paste everything between
+the rules.
 
 ---
 
 **Plugboard - an AI marketing agent that cannot message anyone on its own.**
 
-Repo: <REPO URL>
+Repo: https://github.com/valeemlbb-cell/hackalaunch-the-plug
 Demo (2:19): <VIDEO URL>
 Payout: 7W31iaCmjerN1jkpEnmZevn74SZxv83yEQvLsnc4PS7Q
 
@@ -154,7 +166,15 @@ are derived - there is no field for typing in a performance number.
 
 **Optional Solana receipts.** The agreed terms are hashed and can be anchored as an SPL
 Memo on devnet: a hash, not the parties and not the fee. Change the terms and `verify` says
-so. Mainnet is refused at startup.
+so. Mainnet is refused at startup. In the open: the memo transaction builds, signs and
+simulates, but it was never confirmed on chain - the public faucets rate-limited every
+airdrop and the fee payer stayed at 0 SOL. The README says so too, with the commands that
+finish it.
+
+**On the creator data.** The 24-record seed index is anonymised - no names, handles, URLs
+or addresses, and a test fails the build if an `@` appears in it. So each evidence item's
+`source_url` is a `local://scout/<date>/<id>` pointer into private scouting notes, not a
+clickable link: publishing the link would undo the anonymisation. See docs/DATA_SOURCES.md.
 
 Also included: a localhost dashboard where the approval column is the loudest thing on the
 page, an append-only audit trail of every state change, 129 tests at 86% line coverage
@@ -169,11 +189,13 @@ and what counts as pre-hackathon work are stated plainly in the README.
 
 ## Submission checklist
 
-- [x] Public GitHub repo prepared locally with full commit history (`RUN.md` has the exact `gh repo create` command)
-- [x] Demo video ≤ 3 min recorded from real runs - `demo.mp4` (1080p, 2:19) and `demo_small.mp4` (720p, 2.4 MB)
-- [x] Description written (paste block above)
+- [x] Public repo live: https://github.com/valeemlbb-cell/hackalaunch-the-plug (full history, MIT)
+- [x] Demo video ≤ 3 min built from real runs - `demo_small.mp4` (720p, 2.4 MB) in the repo, 1080p `demo.mp4` for the release
+- [x] Description written (paste block above), repo URL filled in
 - [x] Payout address included: `7W31iaCmjerN1jkpEnmZevn74SZxv83yEQvLsnc4PS7Q`
-- [x] MIT licence, no secrets, devnet only, pre-hackathon work marked
-- [ ] Repo pushed - **human step**, see [RUN.md](RUN.md)
-- [ ] Video uploaded and URL filled in - **human step**
+- [x] MIT licence, no secrets, devnet only, pre-hackathon work marked, CI runs the tests
+- [ ] Verify the pushed tree matches local HEAD - **human step**, [RUN.md](RUN.md) §2
+- [ ] Video uploaded to a hosted platform and `<VIDEO URL>` filled in here, in the paste block, and in the README - **human step**
+- [ ] 1080p `demo.mp4` attached to a GitHub release - **human step**, [RUN.md](RUN.md) §3
+- [ ] *(optional, improves the Solana section)* fund a devnet key and anchor one receipt, paste the explorer URL into the README - **human step**, [RUN.md](RUN.md) §5
 - [ ] Submitted on HackaLaunch - **human step**, dashboard button `hacka-the-plug`
