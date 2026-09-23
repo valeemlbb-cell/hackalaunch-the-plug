@@ -1,3 +1,56 @@
+<!-- generated-header v2 -->
+# SUBMISSION — the-plug
+
+Paste-ready. Five fields, in the order the HackaLaunch form asks for them.
+Refreshed 2026-09-24T05:06:10+07:00.
+
+---
+
+## TITLE  (70/80 chars)
+
+```
+Plugboard — an AI marketing agent that never sends outreach on its own
+```
+
+## DESCRIPTION  (1490 chars)
+
+```
+Plugboard takes a founder's brief, finds the creators who actually fit, writes the outreach, waits for a human to say yes, and then tracks what the deal did.
+
+What it does: brief → match with reasons → draft → HUMAN APPROVES → send → reply → deal → results. It replaces the spreadsheet without replacing the person: it does the reading, the arithmetic and the drafting, and it is structurally incapable of contacting anybody on its own.
+
+How it works: matching scores creators against the brief on audience fit, engagement quality, price band and past performance, and every ranking prints the reasons behind it, including the reasons a creator was rejected. Drafts are generated per creator and land in an approval queue. Nothing leaves the queue without an explicit human approval — the send path refuses an unapproved draft, so the gate is in the execution path rather than in a prompt. The demo video shows that refusal happening. After a deal is agreed, results are tracked back against the original brief.
+
+Real vs mocked: the pipeline, the scoring, the approval gate and the dashboard are real and run on the Python standard library with no API key, no account and no network. The creator roster and the reply traffic are a local fixture dataset — no personal data is scraped and no message is sent anywhere. That is a deliberate constraint, not a missing feature.
+
+How to run: Python 3.11+, `python -m pytest tests -q` (129 tests, ~86% coverage), then the CLI walkthrough in RUN.md.
+```
+
+## REPO URL
+
+```
+https://github.com/valeemlbb-cell/hackalaunch-the-plug
+```
+
+## VIDEO URL
+
+```
+VIDEO_URL_PENDING
+```
+
+> The main session posts `demo_x.mp4` from this folder to X and replaces the
+> line above with the public post URL. The form needs a **link**; a file is useless.
+
+## SOLANA PAYOUT ADDRESS
+
+```
+7W31iaCmjerN1jkpEnmZevn74SZxv83yEQvLsnc4PS7Q
+```
+
+---
+
+## Appendix — earlier submission notes (kept verbatim)
+
 # HackaLaunch submission - The Plug
 
 **Project name:** Plugboard
