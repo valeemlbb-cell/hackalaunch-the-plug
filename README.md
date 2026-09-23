@@ -14,7 +14,7 @@ brief -> match (with reasons) -> draft -> HUMAN APPROVES -> send -> reply -> dea
 ```
 
 Everything runs offline, on the standard library, with no API key and no account. Clone it,
-run six commands, and the whole loop works.
+run the commands below, and the whole loop works.
 
 ## Demo
 
