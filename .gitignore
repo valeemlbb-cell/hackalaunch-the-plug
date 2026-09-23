@@ -1,0 +1,19 @@
+# state, secrets and generated media - never committed
+workspace/
+.env
+data/contacts.local.json
+*.eml
+demo_build/
+
+# demo.mp4 IS committed (3 MB, built by demo/make_demo.py from a real run)
+
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+.vscode/
+.idea/
+.DS_Store

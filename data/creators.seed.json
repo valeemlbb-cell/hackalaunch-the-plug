@@ -1,0 +1,422 @@
+[
+  {
+    "creator_id": "c001",
+    "display_label": "ID podcast - personal finance, long-form interviews",
+    "languages": ["id"], "geo": "ID", "audience_age_band": "25-34",
+    "topics": ["personal_finance", "podcast_talk", "career"],
+    "platforms": [
+      {"platform": "youtube", "followers": 184000, "median_views": 62000, "engagement_rate": 0.041, "posts_last_30d": 9},
+      {"platform": "tiktok", "followers": 61000, "median_views": 48000, "engagement_rate": 0.058, "posts_last_30d": 14}
+    ],
+    "cadence_per_week": 3.0, "days_since_last_post": 2,
+    "price_usd_min": 260, "price_usd_max": 420,
+    "accepts_paid_promo": true, "discloses_ads": true,
+    "contact_channel": "email", "contact_ref": "c001",
+    "safety_flags": [],
+    "evidence": [
+      {"fact": "ships a 60-90 minute finance interview every Tuesday and Friday, 9 uploads in the last 30 days", "source_url": "local://scout/2026-09-20/c001", "observed_at": "2026-09-20"},
+      {"fact": "TikTok cutdowns of the same episodes hold a 5.8% engagement rate against 48k median views", "source_url": "local://scout/2026-09-20/c001", "observed_at": "2026-09-20"}
+    ]
+  },
+  {
+    "creator_id": "c002",
+    "display_label": "ID TikTok - budgeting tips for first jobs",
+    "languages": ["id"], "geo": "ID", "audience_age_band": "18-24",
+    "topics": ["personal_finance", "career", "education"],
+    "platforms": [
+      {"platform": "tiktok", "followers": 240000, "median_views": 96000, "engagement_rate": 0.071, "posts_last_30d": 22},
+      {"platform": "instagram", "followers": 58000, "median_views": 19000, "engagement_rate": 0.044, "posts_last_30d": 12}
+    ],
+    "cadence_per_week": 5.0, "days_since_last_post": 1,
+    "price_usd_min": 180, "price_usd_max": 300,
+    "accepts_paid_promo": true, "discloses_ads": true,
+    "contact_channel": "email", "contact_ref": "c002",
+    "safety_flags": [],
+    "evidence": [
+      {"fact": "22 posts in 30 days, all first-salary budgeting, median 96k views with 7.1% engagement", "source_url": "local://scout/2026-09-21/c002", "observed_at": "2026-09-21"},
+      {"fact": "pinned video is a gaji-pertama breakdown; comments are full of people asking which app to use", "source_url": "local://scout/2026-09-21/c002", "observed_at": "2026-09-21"}
+    ]
+  },
+  {
+    "creator_id": "c003",
+    "display_label": "ID YouTube - crypto market commentary, daily uploads",
+    "languages": ["id"], "geo": "ID", "audience_age_band": "25-34",
+    "topics": ["crypto", "personal_finance", "news_commentary"],
+    "platforms": [
+      {"platform": "youtube", "followers": 132000, "median_views": 14000, "engagement_rate": 0.033, "posts_last_30d": 24},
+      {"platform": "x", "followers": 41000, "median_views": 9000, "engagement_rate": 0.021, "posts_last_30d": 60}
+    ],
+    "cadence_per_week": 6.0, "days_since_last_post": 1,
+    "price_usd_min": 200, "price_usd_max": 350,
+    "accepts_paid_promo": true, "discloses_ads": true,
+    "contact_channel": "dm", "contact_ref": "c003",
+    "safety_flags": [],
+    "evidence": [
+      {"fact": "uploads a 5-6 minute market recap almost daily but has posted no Shorts since 2024", "source_url": "local://scout/2026-09-19/c003", "observed_at": "2026-09-19"},
+      {"fact": "older Shorts on the same channel reached 125k-836k views, so the format works for this audience", "source_url": "local://scout/2026-09-19/c003", "observed_at": "2026-09-19"}
+    ]
+  },
+  {
+    "creator_id": "c004",
+    "display_label": "ID TikTok - Solana / web3 explainers",
+    "languages": ["id", "en"], "geo": "ID", "audience_age_band": "18-24",
+    "topics": ["crypto", "developer_tools", "education"],
+    "platforms": [
+      {"platform": "tiktok", "followers": 88000, "median_views": 34000, "engagement_rate": 0.062, "posts_last_30d": 17},
+      {"platform": "x", "followers": 23000, "median_views": 6000, "engagement_rate": 0.028, "posts_last_30d": 40}
+    ],
+    "cadence_per_week": 4.0, "days_since_last_post": 3,
+    "price_usd_min": 150, "price_usd_max": 260,
+    "accepts_paid_promo": true, "discloses_ads": true,
+    "contact_channel": "email", "contact_ref": "c004",
+    "safety_flags": [],
+    "evidence": [
+      {"fact": "explains one wallet or on-chain concept per video; the airdrop-safety series averaged 34k views", "source_url": "local://scout/2026-09-21/c004", "observed_at": "2026-09-21"}
+    ]
+  },
+  {
+    "creator_id": "c005",
+    "display_label": "ID newsletter - startup and product operators",
+    "languages": ["id", "en"], "geo": "ID", "audience_age_band": "25-34",
+    "topics": ["startup", "career", "productivity"],
+    "platforms": [
+      {"platform": "newsletter", "followers": 14000, "median_views": 6200, "engagement_rate": 0.19, "posts_last_30d": 4}
+    ],
+    "cadence_per_week": 1.0, "days_since_last_post": 4,
+    "price_usd_min": 220, "price_usd_max": 400,
+    "accepts_paid_promo": true, "discloses_ads": true,
+    "contact_channel": "email", "contact_ref": "c005",
+    "safety_flags": [],
+    "evidence": [
+      {"fact": "weekly issue to 14k subscribers, 44% open rate, sponsor slot sold out three issues ahead", "source_url": "local://scout/2026-09-18/c005", "observed_at": "2026-09-18"}
+    ]
+  },
+  {
+    "creator_id": "c006",
+    "display_label": "ID Instagram - personal finance carousels",
+    "languages": ["id"], "geo": "ID", "audience_age_band": "25-34",
+    "topics": ["personal_finance", "education"],
+    "platforms": [
+      {"platform": "instagram", "followers": 310000, "median_views": 41000, "engagement_rate": 0.029, "posts_last_30d": 16}
+    ],
+    "cadence_per_week": 4.0, "days_since_last_post": 2,
+    "price_usd_min": 320, "price_usd_max": 520,
+    "accepts_paid_promo": true, "discloses_ads": true,
+    "contact_channel": "dm", "contact_ref": "c006",
+    "safety_flags": [],
+    "evidence": [
+      {"fact": "carousel explainers on emergency funds and reksa dana, 16 posts in 30 days", "source_url": "local://scout/2026-09-20/c006", "observed_at": "2026-09-20"}
+    ]
+  },
+  {
+    "creator_id": "c007",
+    "display_label": "ID TikTok - comedy sketches about office life",
+    "languages": ["id"], "geo": "ID", "audience_age_band": "18-24",
+    "topics": ["comedy", "career"],
+    "platforms": [
+      {"platform": "tiktok", "followers": 520000, "median_views": 210000, "engagement_rate": 0.083, "posts_last_30d": 19}
+    ],
+    "cadence_per_week": 4.5, "days_since_last_post": 1,
+    "price_usd_min": 600, "price_usd_max": 950,
+    "accepts_paid_promo": true, "discloses_ads": true,
+    "contact_channel": "email", "contact_ref": "c007",
+    "safety_flags": [],
+    "evidence": [
+      {"fact": "office-life sketches averaging 210k views; the payday sketch series is the top performer", "source_url": "local://scout/2026-09-21/c007", "observed_at": "2026-09-21"}
+    ]
+  },
+  {
+    "creator_id": "c008",
+    "display_label": "ID YouTube - gaming streams and highlights",
+    "languages": ["id"], "geo": "ID", "audience_age_band": "18-24",
+    "topics": ["gaming", "comedy"],
+    "platforms": [
+      {"platform": "youtube", "followers": 890000, "median_views": 140000, "engagement_rate": 0.038, "posts_last_30d": 20},
+      {"platform": "tiktok", "followers": 300000, "median_views": 88000, "engagement_rate": 0.051, "posts_last_30d": 25}
+    ],
+    "cadence_per_week": 5.0, "days_since_last_post": 1,
+    "price_usd_min": 900, "price_usd_max": 1500,
+    "accepts_paid_promo": true, "discloses_ads": true,
+    "contact_channel": "email", "contact_ref": "c008",
+    "safety_flags": ["gambling_content"],
+    "evidence": [
+      {"fact": "daily highlight uploads at 140k median views; has run slot-game sponsorships in the past", "source_url": "local://scout/2026-09-20/c008", "observed_at": "2026-09-20"}
+    ]
+  },
+  {
+    "creator_id": "c009",
+    "display_label": "ID TikTok - dormant finance account",
+    "languages": ["id"], "geo": "ID", "audience_age_band": "25-34",
+    "topics": ["personal_finance"],
+    "platforms": [
+      {"platform": "tiktok", "followers": 120000, "median_views": 22000, "engagement_rate": 0.04, "posts_last_30d": 0}
+    ],
+    "cadence_per_week": 0.2, "days_since_last_post": 96,
+    "price_usd_min": 120, "price_usd_max": 220,
+    "accepts_paid_promo": true, "discloses_ads": true,
+    "contact_channel": "dm", "contact_ref": "c009",
+    "safety_flags": [],
+    "evidence": [
+      {"fact": "strong back catalogue on debt payoff but nothing posted in 96 days", "source_url": "local://scout/2026-09-21/c009", "observed_at": "2026-09-21"}
+    ]
+  },
+  {
+    "creator_id": "c010",
+    "display_label": "ID TikTok - inflated follower count, low watch",
+    "languages": ["id"], "geo": "ID", "audience_age_band": "18-24",
+    "topics": ["personal_finance", "crypto"],
+    "platforms": [
+      {"platform": "tiktok", "followers": 410000, "median_views": 1800, "engagement_rate": 0.006, "posts_last_30d": 11}
+    ],
+    "cadence_per_week": 2.5, "days_since_last_post": 4,
+    "price_usd_min": 400, "price_usd_max": 700,
+    "accepts_paid_promo": true, "discloses_ads": true,
+    "contact_channel": "dm", "contact_ref": "c010",
+    "safety_flags": [],
+    "evidence": [
+      {"fact": "410k followers but a 1.8k median view count - 0.004 views per follower", "source_url": "local://scout/2026-09-21/c010", "observed_at": "2026-09-21"}
+    ]
+  },
+  {
+    "creator_id": "c011",
+    "display_label": "ID YouTube - editorial finance, refuses paid placements",
+    "languages": ["id"], "geo": "ID", "audience_age_band": "25-34",
+    "topics": ["personal_finance", "news_commentary"],
+    "platforms": [
+      {"platform": "youtube", "followers": 260000, "median_views": 78000, "engagement_rate": 0.046, "posts_last_30d": 8}
+    ],
+    "cadence_per_week": 2.0, "days_since_last_post": 5,
+    "price_usd_min": 0, "price_usd_max": 0,
+    "accepts_paid_promo": false, "discloses_ads": true,
+    "contact_channel": "email", "contact_ref": "c011",
+    "safety_flags": [],
+    "evidence": [
+      {"fact": "states on the channel page that no paid placements are accepted, only editorial coverage", "source_url": "local://scout/2026-09-18/c011", "observed_at": "2026-09-18"}
+    ]
+  },
+  {
+    "creator_id": "c012",
+    "display_label": "EN YouTube - indie hacker build logs",
+    "languages": ["en"], "geo": "US", "audience_age_band": "25-34",
+    "topics": ["startup", "developer_tools", "ai"],
+    "platforms": [
+      {"platform": "youtube", "followers": 96000, "median_views": 28000, "engagement_rate": 0.049, "posts_last_30d": 6}
+    ],
+    "cadence_per_week": 1.5, "days_since_last_post": 6,
+    "price_usd_min": 500, "price_usd_max": 900,
+    "accepts_paid_promo": true, "discloses_ads": true,
+    "contact_channel": "email", "contact_ref": "c012",
+    "safety_flags": [],
+    "evidence": [
+      {"fact": "weekly build log on shipping side projects, 28k median views", "source_url": "local://scout/2026-09-17/c012", "observed_at": "2026-09-17"}
+    ]
+  },
+  {
+    "creator_id": "c013",
+    "display_label": "EN X - developer tooling threads",
+    "languages": ["en"], "geo": "GLOBAL", "audience_age_band": "25-34",
+    "topics": ["developer_tools", "ai", "productivity"],
+    "platforms": [
+      {"platform": "x", "followers": 74000, "median_views": 52000, "engagement_rate": 0.018, "posts_last_30d": 70}
+    ],
+    "cadence_per_week": 12.0, "days_since_last_post": 1,
+    "price_usd_min": 300, "price_usd_max": 600,
+    "accepts_paid_promo": true, "discloses_ads": true,
+    "contact_channel": "dm", "contact_ref": "c013",
+    "safety_flags": [],
+    "evidence": [
+      {"fact": "posts 70 times a month; the tooling teardown threads clear 52k impressions", "source_url": "local://scout/2026-09-19/c013", "observed_at": "2026-09-19"}
+    ]
+  },
+  {
+    "creator_id": "c014",
+    "display_label": "ID TikTok - student money diaries",
+    "languages": ["id"], "geo": "ID", "audience_age_band": "18-24",
+    "topics": ["personal_finance", "education", "career"],
+    "platforms": [
+      {"platform": "tiktok", "followers": 77000, "median_views": 52000, "engagement_rate": 0.088, "posts_last_30d": 20},
+      {"platform": "youtube", "followers": 21000, "median_views": 12000, "engagement_rate": 0.05, "posts_last_30d": 6}
+    ],
+    "cadence_per_week": 4.5, "days_since_last_post": 1,
+    "price_usd_min": 120, "price_usd_max": 210,
+    "accepts_paid_promo": true, "discloses_ads": true,
+    "contact_channel": "email", "contact_ref": "c014",
+    "safety_flags": [],
+    "evidence": [
+      {"fact": "weekly money-diary series on living in Jakarta on a student budget, 8.8% engagement at 52k median views", "source_url": "local://scout/2026-09-21/c014", "observed_at": "2026-09-21"},
+      {"fact": "already reviews budgeting apps unprompted and labels every paid post", "source_url": "local://scout/2026-09-21/c014", "observed_at": "2026-09-21"}
+    ]
+  },
+  {
+    "creator_id": "c015",
+    "display_label": "ID podcast - career and salary negotiation",
+    "languages": ["id"], "geo": "ID", "audience_age_band": "25-34",
+    "topics": ["career", "podcast_talk", "personal_finance"],
+    "platforms": [
+      {"platform": "podcast", "followers": 34000, "median_views": 11000, "engagement_rate": 0.03, "posts_last_30d": 5},
+      {"platform": "instagram", "followers": 27000, "median_views": 8000, "engagement_rate": 0.037, "posts_last_30d": 10}
+    ],
+    "cadence_per_week": 1.2, "days_since_last_post": 5,
+    "price_usd_min": 160, "price_usd_max": 280,
+    "accepts_paid_promo": true, "discloses_ads": true,
+    "contact_channel": "email", "contact_ref": "c015",
+    "safety_flags": [],
+    "evidence": [
+      {"fact": "host-read mid-rolls on a weekly salary-negotiation show, 11k listens per episode", "source_url": "local://scout/2026-09-18/c015", "observed_at": "2026-09-18"}
+    ]
+  },
+  {
+    "creator_id": "c016",
+    "display_label": "ID Instagram - food and cafe reviews",
+    "languages": ["id"], "geo": "ID", "audience_age_band": "18-24",
+    "topics": ["food", "travel"],
+    "platforms": [
+      {"platform": "instagram", "followers": 190000, "median_views": 64000, "engagement_rate": 0.052, "posts_last_30d": 18}
+    ],
+    "cadence_per_week": 4.0, "days_since_last_post": 2,
+    "price_usd_min": 210, "price_usd_max": 340,
+    "accepts_paid_promo": true, "discloses_ads": true,
+    "contact_channel": "dm", "contact_ref": "c016",
+    "safety_flags": [],
+    "evidence": [
+      {"fact": "daily cafe reviews around Jakarta, 64k median reel views", "source_url": "local://scout/2026-09-20/c016", "observed_at": "2026-09-20"}
+    ]
+  },
+  {
+    "creator_id": "c017",
+    "display_label": "ID TikTok - fitness coaching, no ad labels",
+    "languages": ["id"], "geo": "ID", "audience_age_band": "18-24",
+    "topics": ["fitness", "food"],
+    "platforms": [
+      {"platform": "tiktok", "followers": 150000, "median_views": 45000, "engagement_rate": 0.06, "posts_last_30d": 15}
+    ],
+    "cadence_per_week": 3.5, "days_since_last_post": 2,
+    "price_usd_min": 180, "price_usd_max": 300,
+    "accepts_paid_promo": true, "discloses_ads": false,
+    "contact_channel": "dm", "contact_ref": "c017",
+    "safety_flags": [],
+    "evidence": [
+      {"fact": "runs supplement promotions with no ad label anywhere in the caption or video", "source_url": "local://scout/2026-09-19/c017", "observed_at": "2026-09-19"}
+    ]
+  },
+  {
+    "creator_id": "c018",
+    "display_label": "EN newsletter - fintech operators",
+    "languages": ["en"], "geo": "GLOBAL", "audience_age_band": "25-34",
+    "topics": ["personal_finance", "startup", "crypto"],
+    "platforms": [
+      {"platform": "newsletter", "followers": 31000, "median_views": 12500, "engagement_rate": 0.16, "posts_last_30d": 4}
+    ],
+    "cadence_per_week": 1.0, "days_since_last_post": 3,
+    "price_usd_min": 700, "price_usd_max": 1200,
+    "accepts_paid_promo": true, "discloses_ads": true,
+    "contact_channel": "email", "contact_ref": "c018",
+    "safety_flags": [],
+    "evidence": [
+      {"fact": "weekly fintech briefing, 31k subscribers, 40% open rate", "source_url": "local://scout/2026-09-17/c018", "observed_at": "2026-09-17"}
+    ]
+  },
+  {
+    "creator_id": "c019",
+    "display_label": "ID YouTube - automotive reviews",
+    "languages": ["id"], "geo": "ID", "audience_age_band": "25-34",
+    "topics": ["automotive"],
+    "platforms": [
+      {"platform": "youtube", "followers": 420000, "median_views": 96000, "engagement_rate": 0.031, "posts_last_30d": 10}
+    ],
+    "cadence_per_week": 2.5, "days_since_last_post": 3,
+    "price_usd_min": 550, "price_usd_max": 900,
+    "accepts_paid_promo": true, "discloses_ads": true,
+    "contact_channel": "email", "contact_ref": "c019",
+    "safety_flags": [],
+    "evidence": [
+      {"fact": "long-form car reviews at 96k median views, two uploads a week", "source_url": "local://scout/2026-09-20/c019", "observed_at": "2026-09-20"}
+    ]
+  },
+  {
+    "creator_id": "c020",
+    "display_label": "ID TikTok - micro creator, investing for beginners",
+    "languages": ["id"], "geo": "ID", "audience_age_band": "18-24",
+    "topics": ["personal_finance", "crypto", "education"],
+    "platforms": [
+      {"platform": "tiktok", "followers": 19000, "median_views": 14000, "engagement_rate": 0.11, "posts_last_30d": 24}
+    ],
+    "cadence_per_week": 6.0, "days_since_last_post": 1,
+    "price_usd_min": 45, "price_usd_max": 90,
+    "accepts_paid_promo": true, "discloses_ads": true,
+    "contact_channel": "email", "contact_ref": "c020",
+    "safety_flags": [],
+    "evidence": [
+      {"fact": "11% engagement at 14k median views - the highest ratio in the index for its size", "source_url": "local://scout/2026-09-21/c020", "observed_at": "2026-09-21"}
+    ]
+  },
+  {
+    "creator_id": "c021",
+    "display_label": "ID Instagram - parenting and household budgeting",
+    "languages": ["id"], "geo": "ID", "audience_age_band": "25-34",
+    "topics": ["parenting", "personal_finance", "home_diy"],
+    "platforms": [
+      {"platform": "instagram", "followers": 145000, "median_views": 33000, "engagement_rate": 0.047, "posts_last_30d": 14}
+    ],
+    "cadence_per_week": 3.0, "days_since_last_post": 2,
+    "price_usd_min": 200, "price_usd_max": 330,
+    "accepts_paid_promo": true, "discloses_ads": true,
+    "contact_channel": "dm", "contact_ref": "c021",
+    "safety_flags": [],
+    "evidence": [
+      {"fact": "monthly household-budget breakdowns for families of four, 33k median reel views", "source_url": "local://scout/2026-09-19/c021", "observed_at": "2026-09-19"}
+    ]
+  },
+  {
+    "creator_id": "c022",
+    "display_label": "ID TikTok - beauty hauls",
+    "languages": ["id"], "geo": "ID", "audience_age_band": "18-24",
+    "topics": ["beauty", "fashion"],
+    "platforms": [
+      {"platform": "tiktok", "followers": 265000, "median_views": 71000, "engagement_rate": 0.055, "posts_last_30d": 21}
+    ],
+    "cadence_per_week": 5.0, "days_since_last_post": 1,
+    "price_usd_min": 300, "price_usd_max": 480,
+    "accepts_paid_promo": true, "discloses_ads": true,
+    "contact_channel": "email", "contact_ref": "c022",
+    "safety_flags": [],
+    "evidence": [
+      {"fact": "haul format with visible price tags, 71k median views", "source_url": "local://scout/2026-09-20/c022", "observed_at": "2026-09-20"}
+    ]
+  },
+  {
+    "creator_id": "c023",
+    "display_label": "MY TikTok - personal finance, Malay and Indonesian",
+    "languages": ["id"], "geo": "MY", "audience_age_band": "25-34",
+    "topics": ["personal_finance", "career"],
+    "platforms": [
+      {"platform": "tiktok", "followers": 98000, "median_views": 29000, "engagement_rate": 0.049, "posts_last_30d": 13}
+    ],
+    "cadence_per_week": 3.0, "days_since_last_post": 4,
+    "price_usd_min": 140, "price_usd_max": 240,
+    "accepts_paid_promo": true, "discloses_ads": true,
+    "contact_channel": "email", "contact_ref": "c023",
+    "safety_flags": [],
+    "evidence": [
+      {"fact": "posts in Malay and Indonesian on savings habits, 29k median views from a Kuala Lumpur base", "source_url": "local://scout/2026-09-18/c023", "observed_at": "2026-09-18"}
+    ]
+  },
+  {
+    "creator_id": "c024",
+    "display_label": "ID YouTube - tech reviews and apps",
+    "languages": ["id"], "geo": "ID", "audience_age_band": "18-24",
+    "topics": ["developer_tools", "productivity", "education"],
+    "platforms": [
+      {"platform": "youtube", "followers": 205000, "median_views": 58000, "engagement_rate": 0.042, "posts_last_30d": 11},
+      {"platform": "tiktok", "followers": 74000, "median_views": 26000, "engagement_rate": 0.05, "posts_last_30d": 16}
+    ],
+    "cadence_per_week": 3.0, "days_since_last_post": 2,
+    "price_usd_min": 280, "price_usd_max": 460,
+    "accepts_paid_promo": true, "discloses_ads": true,
+    "contact_channel": "email", "contact_ref": "c024",
+    "safety_flags": [],
+    "evidence": [
+      {"fact": "app-review format with a fixed 'is it worth installing' segment, 58k median views", "source_url": "local://scout/2026-09-20/c024", "observed_at": "2026-09-20"}
+    ]
+  }
+]

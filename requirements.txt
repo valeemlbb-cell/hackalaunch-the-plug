@@ -1,0 +1,10 @@
+# Plugboard's runtime is the Python standard library. Nothing here is needed to run
+# `plugboard brief|match|draft|approve|send|deal|report`.
+
+# Tests
+pytest>=8.0
+pytest-cov>=5.0
+
+# Optional: Solana devnet receipts (`plugboard receipt anchor`). Without it, anchoring
+# reports "solders is not installed" and the deal hash is still stored and verifiable.
+solders>=0.21
